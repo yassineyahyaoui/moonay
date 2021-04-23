@@ -8,6 +8,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     background: linear-gradient(#2b1055, #7597de);
+    overflow-x: hidden;
 }
 
 header {
@@ -71,6 +73,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 section::before {
@@ -101,7 +104,8 @@ section img#mountains_front {
     z-index: 10;
 }
 
-section h2 {
+section #title {
+    right: -350px;
     position: absolute;
     color: #fff;
     white-space: nowrap;
@@ -114,11 +118,17 @@ section a {
     display: inline-block;
     padding: 8px 30px;
     border-radius: 40px;
+    border: 1px #fff solid;
     background: #fff;
     color: #2b1055;
     font-size: 1.5em;
     z-index: 9;
     transform: translateY(100px);
+}
+
+section a:hover {
+    color: #fff;
+    background: transparent;
 }
 
 .sec {
