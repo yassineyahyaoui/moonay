@@ -16,8 +16,11 @@ document.addEventListener('scroll', () => {
     title.style.marginTop = value * 1.5 + "px";
     cta.style.marginTop = value * 1.5 + "px";
     header.style.top = value * 0.7 + "px";
-    console.log(value);
-    if (value > 740) {
+    if (value > 760) {
         header.style.top = value + "px";
+        header.style.backgroundColor = "#420A50";
+    }
+    if (value < 760) {
+        header.style.backgroundColor = "rgb(0, 0, 0, 0)";
     }
 });
