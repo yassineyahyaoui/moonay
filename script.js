@@ -15,5 +15,9 @@ document.addEventListener('scroll', () => {
     title.style.marginRight = value * 4 + "px";
     title.style.marginTop = value * 1.5 + "px";
     cta.style.marginTop = value * 1.5 + "px";
-    header.style.top = value + "px";
+    header.style.top = value * 0.7 + "px";
+    console.log(value);
+    if (value > 740) {
+        header.style.top = value + "px";
+    }
 });
